@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Investigación y aplicación de metodologías BEM y camelCase</title>
+  <link rel="stylesheet" href="estilos/estilos.css">
+
+</head>
+<body>
+
+  <header>
+    <h1>Investigación y aplicación de metodologías BEM y camelCase</h1>
+    <p>El propósito de la página web, es informar a los usuarios y dar a conocer de manera detallada sobre las metodologías BEN y CAMELCASE, también mostrar sus ventajas y diferencias que podemos observar para su uso en programación.</p>
+  </header>
+
+  <main>
+    <!-- Sección BEM -->
+    <section id="bem">
+      <h2>¿Qué es BEM?</h2>
+      <p><strong>BEM</strong> (Block Element Modifier) metodología con la que puedes estructurar y organizar el código CSS de manera modular y reutilizable. En lugar de escribir reglas CSS desordenadas o difíciles de mantener, BEM te ayuda a crear un sistema coherente que facilita el trabajo en proyectos grandes.</p>
+
+      <h3>Ventajas de usar BEM:</h3>
+      <ol>
+        <li><strong>Facilidad de lectura y comprensión:</strong> La nomenclatura BEM hace que el código sea más fácil de entender y navegar, especialmente en proyectos grandes.</li>
+        <li><strong>Reutilización de código:</strong> Los componentes BEM son reutilizables en diferentes partes del sitio web.</li>
+        <li><strong>Organización del código:</strong> La metodología BEM ayuda a organizar las clases CSS, lo que facilita el mantenimiento y la colaboración.</li>
+        <li><strong>Reducción de conflictos:</strong> BEM ayuda a evitar conflictos de estilos entre diferentes partes del sitio web. </li>
+        <li><strong>Mayor escalabilidad:</strong> La estructura BEM facilita la ampliación del proyecto web. </li>
+      </ol>
+
+      <h3>Ejemplos de código BEM:</h3>
+      <ul>
+        <li><code>.menu</code></li>
+        <li><code>.menu__item</code></li>
+        <li><code>.menu__item--activo</code></li>
+        <li><code>.boton--grande</code></li>
+      </ul>
+    </section>
+
+    <!-- Sección camelCase -->
+    <section id="camelcase">
+      <h2>¿Qué es camelCase?</h2>
+      <p><strong>camelCase</strong> es una convención de nomenclatura usada comúnmente en programación donde las palabras se unen sin espacios y cada nueva palabra comienza con mayúscula, excepto la primera. El camelCase no solo se limita a la programación, sino que también se ha extendido a otras áreas, como la escritura de nombres de dominio en la web, la definición de identificadores en XML o la creación de hashtags en redes sociales. Su versatilidad y simplicidad lo convierten en una opción atractiva para mantener la coherencia y claridad en la comunicación, tanto en el ámbito técnico como en el cotidiano. Su popularidad y amplio uso en diversas plataformas lo hacen una habilidad valiosa para cualquier aspirante a desarrollador o profesional del mundo digital.</p>
+
+      <h3>¿Cuándo se usa camelCase?</h3>
+      <ol>
+        <li>Al declarar variables en JavaScript.</li>
+        <li>En nombres de funciones.</li>
+        <li>En objetos o propiedades en muchos lenguajes.</li>
+      </ol>
+
+      <h3>Ejemplos de código camelCase:</h3>
+      <ul>
+        <li><code>nombreUsuario</code></li>
+        <li><code>obtenerDatos()</code></li>
+        <li><code>miVariable</code></li>
+        <li><code>botonPrimario</code></li>
+      </ul>
+    </section>
+
+    <!-- Sección Comparación -->
+    <section id="comparacion">
+      <h2>Comparación entre BEM y camelCase</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Criterio</th>
+            <th>BEM</th>
+            <th>camelCase</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Uso común</td>
+            <td>Nombres de clases CSS</td>
+            <td>Variables y funciones en JS</td>
+          </tr>
+          <tr>
+            <td>Legibilidad</td>
+            <td>Alta para estructura de componentes</td>
+            <td>Alta para código lógico</td>
+          </tr>
+          <tr>
+            <td>Separadores</td>
+            <td>Guiones y guiones bajos ( __ , -- )</td>
+            <td>Mayúsculas internas</td>
+          </tr>
+          <tr>
+            <td>Escalabilidad</td>
+            <td>Muy alta en CSS modular</td>
+            <td>Moderada en lógica JS</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>¿Cuándo usar cada una?</strong>  
+      Usa BEM cuando estés escribiendo clases de CSS para mantener componentes estructurados. Usa camelCase en programación (JavaScript, TypeScript, etc.) para variables y funciones claras y consistentes.</p>
+    </section>
+
+    <!-- Sección Aplicación Práctica -->
+    <section id="ejemplo-practico">
+      <h2>Aplicación práctica de BEM con CSS</h2>
+      <p><strong>Ejemplo de un botón creado con clases BEM:</strong></p>
+
+      <button class="boton boton--grande">
+        <span class="boton__icono">🔍</span> Buscar
+      </button>
+
+      <p>En este ejemplo:</p>
+      <ul>
+        <li><code>.boton</code> es el bloque principal.</li>
+        <li><code>.boton--grande</code> es un modificador que cambia el tamaño.</li>
+        <li><code>.boton__icono</code> es un elemento interno del botón.</li>
+      </ul>
+
+      <p><strong>Ejemplo de una tarjeta creada con clases BEM:</strong></p>
+
+      <div class="tarjeta">https://via.placeholder.com/150
+        <img class="tarjeta__imagen" src="imagenes/f2b1618c5c371bdab6073571f6e8b007.jpg" alt="Avatar">
+        <h3 class="tarjeta__titulo">Juan Pérez</h3>
+        <p class="tarjeta__descripcion">Desarrollador Frontend</p>
+      </div>
+
+      <p>En este ejemplo:</p>
+      <ul>
+        <li><code>.tarjeta__imagen</code> la imagen de perfil del usuario.</li>
+        <li><code>.tarjeta__titulo</code> el nombre del usuario.</li>
+        <li><code>.tarjeta__descripcion</code> la descripción o rol del usuario.</li>
+      </ul>
+
+      <p><strong>Ejemplo de un menú de navegación creado con clases BEM:</strong></p>
+
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li class="menu__item menu__item--activo"><a href="#" class="menu__enlace">Inicio</a></li>
+          <li class="menu__item"><a href="#" class="menu__enlace">Servicios</a></li>
+          <li class="menu__item"><a href="#" class="menu__enlace">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <p>En este ejemplo:</p>
+      <ul>
+        <li><code>.menu__lista</code> la lista <code>ul</code> que contiene los ítems del menú.</li>
+        <li><code>.menu__item</code> cada <code>li</code> individual.</li>
+        <li><code>.menu__enlace</code> el enlace <code>a</code> dentro de cada ítem.</li>
+      </ul>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Recursos útiles:</p>
+    <ul>
+      <li><a href="https://keepcoding.io/blog/camelcase-que-es-como-funciona-y-beneficios/" target="_blank">Guía oficial de BEM</a></li>
+      <li><a href="https://www.arsys.es/blog/bem-guia-completa-para-css-modular-con-ejemplos#tree-3">MDN Web Docs</a></li>
+    </ul>
+    <p>&copy; 2025 - Guía CSS</p>
+  </footer>
+   
+</body>
+</html>
